@@ -222,5 +222,3 @@ When an API key is present, `main.py` uses the configured Groq model at `tempera
 
 ### Q&A Demo (1 min)
 - Launch `python main.py --qa` and ask: *"Why did Chennai-Bangalore get pricier in March?"*
-#   S m a r t - F r e i g h t - C o s t - A n o m a l y - D e t e c t i o n - A I - A s s i s t a n t  
- 
