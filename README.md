@@ -52,8 +52,8 @@ context_notes.csv ──────► [ Note Matcher ] ◄── RAG: Route ma
 ## 3. Mathematical Definitions & Edge Cases
 
 ### A. Cost Metric
-$$\text{Cost per Tonne-Km} = \frac{\sum \text{freight\_cost\_inr}}{\sum (\text{quantity\_tonnes} \times \text{distance\_km})}$$
-*Weighted average aggregation* gives every tonne-km equal weight, preventing small high-cost parcels from distorting the route metric.
+$$\text{Cost per Tonne-Km} = \frac{\sum \text{Freight Cost (INR)}}{\sum (\text{Quantity in Tonnes} \times \text{Distance in km})}$$
+*Weighted average aggregation* (in code: `sum(freight_cost_inr) / sum(quantity_tonnes * distance_km)`) gives every tonne-km equal weight, preventing small high-cost parcels from distorting the route metric.
 
 ### B. Week Alignment
 - Weeks strictly run **Monday to Sunday**.
